@@ -1,0 +1,265 @@
+* {
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#container {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
+}
+
+.flexContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.loginButton {
+  display: inline-block;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding: 10px 20px;
+  border-radius: 12px;
+
+  -webkit-box-shadow: 0px 8px 32px 6px rgba(0,0,0,0.1); 
+  box-shadow: 0px 8px 32px 6px rgba(0,0,0,0.1);
+}
+
+.loginButton img {
+  height: 32px;
+  padding-right: 12px;
+}
+
+.loginButton * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.loginButton:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0px 8px 32px 6px rgba(0,0,0,0.15); 
+  box-shadow: 0px 8px 32px 6px rgba(0,0,0,0.15);
+}
+
+#loggedInContainer {
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 35px;
+}
+
+#header {
+  margin-bottom: 40px;
+}
+
+#header #status h3 {
+  margin: 0;
+}
+
+#header #actions {
+  margin-top: 20px;
+}
+
+#header #address {
+  font-family: "Lucida Console", "Courier New", monospace;
+  opacity: 0.6;
+}
+
+#disconnect {
+  background: none;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+#disconnect:hover {
+  background: rgba(126, 152, 255, 0.1);
+  border: 1px solid rgba(0,0,0,0.3);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#header > * {
+  display: inline-block;
+  vertical-align: top;
+}
+
+#header #balance-section {
+  margin-left: 5%;
+  height: 100%;
+  background: rgba(126, 152, 255, 0.1);
+  border-radius: 10%;
+  padding: 10px 30px;
+  font-weight: bold;
+  float: right;
+}
+
+#header #balance-section h3 {
+  margin-bottom: 5%;
+  opacity: 0.4;
+}
+
+#header #balance-section p {
+  margin-top: 0;
+}
+
+#transaction-list {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+#transaction-table {
+  width: 100%;
+  table-layout: fixed;
+  word-break: break-word;
+}
+
+#transaction-table th {
+  text-align: left;
+}
+
+#transaction-table td, #transaction-table td * {
+  vertical-align: top;
+}
+
+.loading-button-custom {
+  text-transform: none !important;
+  font-size: 1.3em !important;
+  box-shadow: none !important;
+}
+
+#send-transaction-box {
+  background-color: #f4f4f4;
+  padding: 30px;
+  margin-bottom: 40px;
+}
+
+#send-transaction-box > * {
+  margin-top: 20px;
+}
+
+#send-transaction-box h3 {
+  margin: 0;
+}
+
+.button-custom {
+  text-transform: none !important;
+  font-size: 1.3em !important;
+  box-shadow: none !important;
+}
+
+#login-box {
+  display: block;
+  border: 2px solid #f4f4f4;
+  border-radius: 15px;
+  width: 50%;
+  flex-direction: column;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+#login-box .button-custom {
+  background-color: rgba(0,0,0,0.35);
+  color: rgba(255, 255, 255, 1);
+  font-weight: bold;
+  width: 100%;
+}
+
+.owner-text-field, #add-owner-button {
+  margin-bottom: 20px !important;
+}
+
+.safe-creation-alert {
+  margin-bottom: 20px;
+}
+
+#outline-basic-input {
+  font: inherit;
+  letter-spacing: inherit;
+  color: currentColor;
+  border: 0;
+  box-sizing: content-box;
+  background: none;
+  height: 1.4375em;
+  margin: 0;
+  -webkit-tap-highlight-color: transparent;
+  display: block;
+  min-width: 0;
+  -webkit-animation-name: mui-auto-fill-cancel;
+  animation-name: mui-auto-fill-cancel;
+  -webkit-animation-duration: 10ms;
+  animation-duration: 10ms;
+  padding: 16.5px 14px;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.form-label-custom {
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.4375em;
+  letter-spacing: 0.00938em;
+  margin-bottom: 4px;
+}
+
+#create-safe-button {
+  color: white;
+  background: rgb(25, 118, 210);
+}
+
+#safe-list-box {
+  background-color: #f4f4f4;
+  padding: 30px;
+  margin-bottom: 40px;
+}
+
+#safe-list-box > h3:first-of-type {
+  margin-top: 0;
+}
